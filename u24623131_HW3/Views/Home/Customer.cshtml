@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Customer";
+    Layout = null;
+}
+
+<div class="form-container">
+    <div class="form-row">
+        <label class="field-label">First Name</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Surname</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Customer ID</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Email</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Phone Number</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Street</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">City</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">State</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Zip Code</label>
+        <div class="display-field"></div>
+    </div>
+
+    <div class="form-row">
+        <label class="field-label">Notes</label>
+        <div class="display-field textarea-field"></div>
+    </div>
+</div>
+
+<div class="button-holder">
+    <button>test</button>
+    <button>test2</button>
+</div>
+
+<style>
+
+    body {
+        display: grid;
+        place-items: center; 
+    }
+
+    .button-holder{
+        display:inline-flex
+    }
+    .form-container {
+        width: 100%;
+    }
+
+    .form-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        gap: 20px;
+    }
+
+    .field-label {
+        width: 120px;
+        text-align: right;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    .display-field {
+        flex: 1;
+        max-width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        min-height: 18px;
+    }
+
+    .textarea-field {
+        min-height: 80px;
+        white-space: pre-wrap;
+    }
+</style>

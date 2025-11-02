@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="Container" style="display: flex;">
+    <div id="page">
+        Staff <button style="float:right" id="Staff">CREATE</button>
+        <iframe src="@Url.Action("Staff")"></iframe>
+    </div>
+    <div id="page">
+        Customer <button style="float:right" id="Customer">CREATE</button>
+        <iframe src="@Url.Action("Customer")"></iframe>
+    </div>
+    <div id="page">
+
+        <iframe src="@Url.Action("Product")"></iframe>
+    </div>
+
+</div>
+
+<style>
+    #page {
+        padding: 20px 40px;
+        height: 100vh;
+    }
+    iframe{
+        height: 100%;
+    }
+</style>
