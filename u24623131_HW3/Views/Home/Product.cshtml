@@ -1,9 +1,103 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Product";
     Layout = null;
-
 }
 
-<h2>Product</h2>
+<h2>Product Details</h2>
 
+<div class="product-container">
+    <div class="product-image">
+        <img src="/images/bike-placeholder.jpg" alt="Product Image" />
+    </div>
+
+    <div class="product-info">
+        <div class="form-row">
+            <label>Product Name</label>
+            <div class="display-field">Trek Mountain Bike 5000</div>
+        </div>
+        <div class="form-row">
+            <label>Model Year</label>
+            <div class="display-field">2024</div>
+        </div>
+        <div class="form-row">
+            <label>Category</label>
+            <div class="display-field">Mountain Bike</div>
+        </div>
+        <div class="form-row">
+            <label>Brand</label>
+            <div class="display-field">Trek</div>
+        </div>
+        <div class="form-row">
+            <label>Price</label>
+            <div class="display-field">$899.99</div>
+        </div>
+        <div class="form-row">
+            <label>Stock Quantity</label>
+            <div class="display-field">15</div>
+        </div>
+    </div>
+    <div class="button-holder">
+        <button>test</button>
+        <button>test2</button>
+    </div>
+</div>
+
+<style>
+    .button-holder {
+        display: inline-flex
+    }
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .product-image {
+        text-align: center;
+    }
+
+    .product-info {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    /* Consistent with Staff Page Styling */
+    .form-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        gap: 20px;
+    }
+
+    label {
+        width: 120px;
+        text-align: right;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    .display-field {
+        flex: 1;
+        max-width: 300px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        min-height: 18px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin: 10px 0;
+        color: #333;
+    }
+</style>
